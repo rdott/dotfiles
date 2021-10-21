@@ -4,7 +4,7 @@ then
   # Only run nested steps in Spin + shopify/shopify workspaces.
   if [[ "$SPIN_REPO_SOURCE_PATH" = "/src/github.com/shopify/shopify" ]]
   then
-    cartridge insert rdott/inventory-list-refresh-po
-    . /cartridges/inventory-list-refresh-po/setup.sh
+    cartridge insert rdott/inventory-list-refresh-incoming
+    . /cartridges/inventory-list-refresh-incoming/setup.sh
   fi
 fi
